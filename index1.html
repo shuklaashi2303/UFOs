@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>UFO Finder - Level 1</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+  <link rel="icon" type="image" href="https://s.abcnews.com/images/US/mily-way-calif-gty-aa-200108_hpMain_16x9_992.jpg">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+
+  <body class="bg-dark">
+
+  <div class="wrapper">
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="index.html">UFO Sightings
+            <img class="nav-ufo" src="static/images/ufo.svg">
+          </a>
+        </div>
+      </div>
+    </nav>
+      <div class="jumbotron">
+        <h1 class="display-4">The Truth is Out There</h1>
+      </div>
+     
+        <p class="text-center">Filter Search</p>
+        <ul class="list-group">
+          <li class="list-group-item bg-dark">
+            <label for="date">Enter Date</label>
+            <input type="text" placeholder="1/10/2010" id="datetime" />
+          </li>
+          <li class="list-group-item bg-dark">
+            <label for="city">Enter a City</label>
+            <input type="text" id="city" class="form-control" placeholder="roswell" />
+          </li>
+          <li class="list-group-item bg-dark">
+            <label for="state">Enter a State</label>
+            <input type="text" id="state" class="form-control" placeholder="ca" />
+          </li>
+          <li class="list-group-item bg-dark">
+            <label for="country">Enter a Country</label>
+            <input type="text" id="country" class="form-control" placeholder="us" />
+          </li>
+          <li class="list-group-item bg-dark">
+            <label for="shape">Enter a Shape</label>
+            <input type="text" id="shape" class="form-control" placeholder="circle" />
+             <button id="filter-btn" type="button" class="btn btn-default">
+               Filter Table
+             </button>
+          </li>
+        </ul>
+       <div class="col-md-10">
+        <div id="table-area" class="">
+          <table id="ufo-table" class="table table-striped">
+            <thead>
+              <tr>
+                <th class="table-head">DATE</th>
+                <th class="table-head">CITY</th>
+                <th class="table-head">STATE</th>
+                <th class="table-head">COUNTRY</th>
+                <th class="table-head">SHAPE</th>
+                <th class="table-head">DURATION</th>
+                <th class="table-head">COMMENTS</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <spam class="bottom">UFO Sightings by Gabriel Pivaro | 2020</spam>
+  </footer>
+</div>
+       <script src="static/js/data.js"></script>
+       <script src="static/js/app.js"></script>
+      </body>
+      </html>
